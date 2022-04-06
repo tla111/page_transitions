@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Navbar, Homepage, CardsPage } from './components';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar, AnimatedRoutes } from './components';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 
@@ -9,10 +9,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/cards" element={<CardsPage />} />
-        </Routes>
+        <AnimatedRoutes />
       </Router>
     </div>
   )
