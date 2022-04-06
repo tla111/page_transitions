@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import { Navbar, Homepage, CardsPage } from './components';
 
 function App() {
 
